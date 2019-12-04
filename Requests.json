@@ -1,0 +1,687 @@
+{
+    "version": 5,
+    "entities": [
+        {
+            "entity": {
+                "type": "Project",
+                "id": "b3e57898-2451-45a9-9bb6-63f57186dad5",
+                "name": "Company"
+            },
+            "children": [
+                {
+                    "entity": {
+                        "type": "Service",
+                        "id": "618ff37c-4475-43a7-b1b4-6b59aa9d06c6",
+                        "name": "CRUD Preco",
+                        "parentId": "b3e57898-2451-45a9-9bb6-63f57186dad5"
+                    },
+                    "children": [
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text",
+                                    "autoSetLength": true
+                                },
+                                "headersType": "Form",
+                                "uri": {
+                                    "scheme": {
+                                        "secure": true,
+                                        "name": "https",
+                                        "version": "V11"
+                                    }
+                                },
+                                "id": "8169beff-0938-43f4-8162-be45d63d735f",
+                                "name": "delete",
+                                "headers": [],
+                                "parentId": "618ff37c-4475-43a7-b1b4-6b59aa9d06c6"
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text",
+                                    "autoSetLength": true
+                                },
+                                "headersType": "Form",
+                                "uri": {
+                                    "scheme": {
+                                        "secure": true,
+                                        "name": "https",
+                                        "version": "V11"
+                                    }
+                                },
+                                "id": "c22fbca6-c79b-4831-9071-d61b18bdd1bd",
+                                "name": "detail",
+                                "headers": [],
+                                "parentId": "618ff37c-4475-43a7-b1b4-6b59aa9d06c6"
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text",
+                                    "autoSetLength": true
+                                },
+                                "headersType": "Form",
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8080",
+                                    "path": "/precos"
+                                },
+                                "id": "f9c110e8-bc02-4845-aa54-99c79f4baec2",
+                                "name": "list",
+                                "headers": [],
+                                "parentId": "618ff37c-4475-43a7-b1b4-6b59aa9d06c6"
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text",
+                                    "autoSetLength": true
+                                },
+                                "headersType": "Form",
+                                "uri": {
+                                    "scheme": {
+                                        "secure": true,
+                                        "name": "https",
+                                        "version": "V11"
+                                    }
+                                },
+                                "id": "699c6246-2220-45de-97d5-6fab12c50395",
+                                "name": "save",
+                                "headers": [],
+                                "parentId": "618ff37c-4475-43a7-b1b4-6b59aa9d06c6"
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text",
+                                    "autoSetLength": true
+                                },
+                                "headersType": "Form",
+                                "uri": {
+                                    "scheme": {
+                                        "secure": true,
+                                        "name": "https",
+                                        "version": "V11"
+                                    }
+                                },
+                                "id": "010388fb-2b53-451c-8884-948265ce2162",
+                                "name": "update",
+                                "headers": [],
+                                "parentId": "618ff37c-4475-43a7-b1b4-6b59aa9d06c6"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "entity": {
+                        "type": "Service",
+                        "id": "0c660b20-2710-41e7-89ce-d8f806c0c221",
+                        "name": "CRUD Usuario",
+                        "parentId": "b3e57898-2451-45a9-9bb6-63f57186dad5"
+                    },
+                    "children": [
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.5",
+                                    "name": "DELETE"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text",
+                                    "autoSetLength": true
+                                },
+                                "headersType": "Form",
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8080",
+                                    "path": "/usuarios/1"
+                                },
+                                "id": "1b378eca-05c5-40ba-91c0-a2028edffbd4",
+                                "name": "delete",
+                                "headers": [],
+                                "parentId": "0c660b20-2710-41e7-89ce-d8f806c0c221"
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text",
+                                    "autoSetLength": true
+                                },
+                                "headersType": "Form",
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8080",
+                                    "path": "/usuarios/1"
+                                },
+                                "id": "557f763e-6a40-4c22-9f99-64979a9b9168",
+                                "name": "detail",
+                                "headers": [],
+                                "parentId": "0c660b20-2710-41e7-89ce-d8f806c0c221"
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text",
+                                    "autoSetLength": true
+                                },
+                                "headersType": "Form",
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8080",
+                                    "path": "/usuarios"
+                                },
+                                "id": "966cf1d7-4032-4da6-b82c-ac90bfd9fc16",
+                                "name": "list",
+                                "headers": [],
+                                "parentId": "0c660b20-2710-41e7-89ce-d8f806c0c221"
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "requestBody": true,
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                                    "name": "POST"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text",
+                                    "autoSetLength": true,
+                                    "textBody": "{\n  \"nome\": \"Joaquin\",\n  \"cpf\": \"12412412\"\n}"
+                                },
+                                "headersType": "Form",
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8080",
+                                    "path": "/usuarios"
+                                },
+                                "id": "ac7b2be7-79a1-4311-9bd8-3431217ba4ab",
+                                "name": "save",
+                                "headers": [
+                                    {
+                                        "enabled": true,
+                                        "name": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ],
+                                "parentId": "0c660b20-2710-41e7-89ce-d8f806c0c221"
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "requestBody": true,
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.4",
+                                    "name": "PUT"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text",
+                                    "autoSetLength": true
+                                },
+                                "headersType": "Form",
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8080",
+                                    "path": "/usuarios"
+                                },
+                                "id": "495f8f89-41a2-40da-bc23-abe8b64ecc39",
+                                "name": "update",
+                                "headers": [
+                                    {
+                                        "enabled": true,
+                                        "name": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ],
+                                "parentId": "0c660b20-2710-41e7-89ce-d8f806c0c221"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "entity": {
+                        "uriEditor": true,
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "multipart/form-data",
+                                "items": [
+                                    {
+                                        "enabled": true,
+                                        "type": "File",
+                                        "name": "csv"
+                                    }
+                                ]
+                            },
+                            "bodyType": "Form",
+                            "autoSetLength": true,
+                            "textBody": "{ \"valorCompra\": 39.0,\n \"dataColeta\": \"2019-12-13T10:18:30\",\n \"produtoId\": 1\n}"
+                        },
+                        "headersType": "Form",
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "localhost:8080",
+                            "path": "/import"
+                        },
+                        "id": "29f904e0-2394-40e1-99b1-0f5dab882265",
+                        "name": "Importação de arquivo csv",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "multipart/form-data"
+                            },
+                            {
+                                "enabled": true,
+                                "name": "Accept-Charset",
+                                "value": "UTF-8"
+                            }
+                        ],
+                        "parentId": "b3e57898-2451-45a9-9bb6-63f57186dad5"
+                    }
+                },
+                {
+                    "entity": {
+                        "uriEditor": true,
+                        "type": "Request",
+                        "method": {
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                            "name": "GET"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "autoSetLength": true
+                        },
+                        "headersType": "Form",
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": [
+                                    {
+                                        "enabled": true,
+                                        "name": "nome",
+                                        "value": "anapolis"
+                                    }
+                                ]
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "localhost:8080",
+                            "path": "/querys/precos/avg/municipios"
+                        },
+                        "id": "192f5407-f4a5-4885-83d7-da296855d8af",
+                        "name": "Média de preços por Municipio",
+                        "headers": [],
+                        "parentId": "b3e57898-2451-45a9-9bb6-63f57186dad5"
+                    }
+                },
+                {
+                    "entity": {
+                        "uriEditor": true,
+                        "type": "Request",
+                        "method": {
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                            "name": "GET"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "autoSetLength": true
+                        },
+                        "headersType": "Form",
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": [
+                                    {
+                                        "enabled": true,
+                                        "name": "bandeira",
+                                        "value": "IPIRANGA"
+                                    }
+                                ]
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "localhost:8080",
+                            "path": "/querys/bandeiras/avg/valorCompra/valorVenda"
+                        },
+                        "id": "935762cf-52bb-498f-8fd9-e9302b2a2f16",
+                        "name": "Request 9",
+                        "headers": [],
+                        "parentId": "b3e57898-2451-45a9-9bb6-63f57186dad5"
+                    }
+                },
+                {
+                    "entity": {
+                        "uriEditor": true,
+                        "type": "Request",
+                        "method": {
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                            "name": "GET"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "autoSetLength": true
+                        },
+                        "headersType": "Form",
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": [
+                                    {
+                                        "enabled": true,
+                                        "name": "municipio",
+                                        "value": "brasilia"
+                                    }
+                                ]
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "localhost:8080",
+                            "path": "/querys/municipios/avg/valorCompra/valorVenda"
+                        },
+                        "id": "adcbd2a3-7838-45e9-b98e-719ce0049e8f",
+                        "name": "media valor de compra e venda por municipio",
+                        "headers": [],
+                        "parentId": "b3e57898-2451-45a9-9bb6-63f57186dad5"
+                    }
+                },
+                {
+                    "entity": {
+                        "uriEditor": true,
+                        "type": "Request",
+                        "method": {
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                            "name": "GET"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "autoSetLength": true
+                        },
+                        "headersType": "Form",
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": [
+                                    {
+                                        "enabled": true,
+                                        "name": "sigla",
+                                        "value": "CO"
+                                    }
+                                ]
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "localhost:8080",
+                            "path": "/querys/allInfos/siglas"
+                        },
+                        "id": "2b5557c4-9bde-4942-adc2-8a0adb9a0823",
+                        "name": "recurso que retorne todas as informações importadas por sigla da região",
+                        "headers": [],
+                        "parentId": "b3e57898-2451-45a9-9bb6-63f57186dad5"
+                    }
+                },
+                {
+                    "entity": {
+                        "uriEditor": true,
+                        "type": "Request",
+                        "method": {
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                            "name": "GET"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "autoSetLength": true
+                        },
+                        "headersType": "Form",
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": [
+                                    {
+                                        "enabled": true,
+                                        "name": "dataColeta",
+                                        "value": "2007-12-03 10:15"
+                                    }
+                                ]
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "localhost:8080",
+                            "path": "/querys/allInfos/dataColeta"
+                        },
+                        "id": "d2defba6-f1b8-46e9-be78-5659220b4e62",
+                        "name": "recursos pela data de coleta",
+                        "headers": [],
+                        "parentId": "b3e57898-2451-45a9-9bb6-63f57186dad5"
+                    }
+                },
+                {
+                    "entity": {
+                        "uriEditor": true,
+                        "type": "Request",
+                        "method": {
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                            "name": "GET"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "autoSetLength": true
+                        },
+                        "headersType": "Form",
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": [
+                                    {
+                                        "enabled": true,
+                                        "name": "distribuidora",
+                                        "value": "166827"
+                                    }
+                                ]
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "localhost:8080",
+                            "path": "/querys/allInfos/distribuidoras"
+                        },
+                        "id": "667a62a0-c8a4-4dac-be63-a74f3062bbda",
+                        "name": "todas infos por distribuidora",
+                        "headers": [],
+                        "parentId": "b3e57898-2451-45a9-9bb6-63f57186dad5"
+                    }
+                }
+            ]
+        }
+    ],
+    "front-version": "23.0.3"
+}

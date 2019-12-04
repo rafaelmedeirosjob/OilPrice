@@ -1,0 +1,1 @@
+INSERT INTO USUARIO(nome,cpf) VALUES('Rafael Medeiros','10910176469');
